@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bhupesh Panwar – Engineer</title>
+<meta name="description" content="Bhupesh Panwar is an engineer who builds apps and Chrome extensions, and writes articles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#eef0ff; --surface:#ffffff; --ink:#1b1b3a; --muted:#5d5f82;
+    --accent:#5b4bff; --accent-ink:#ffffff; --peach:#ffd9c7; --mint:#cdf5e4; --sky:#d6e4ff; --line:#d9dcf5;
+    --display:'Bricolage Grotesque',system-ui,sans-serif;
+    --body:'DM Sans',system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14142b; --surface:#1e1e3d; --ink:#f0f0ff; --muted:#a3a5cc;
+      --accent:#8c80ff; --accent-ink:#14142b; --peach:#4a3340; --mint:#1f4137; --sky:#25335c; --line:#2e2e56;
+    }
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px}
+
+  nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+  .mark{font-family:var(--display);font-weight:800;font-size:1.15rem;text-decoration:none;display:flex;align-items:center;gap:10px}
+  .mark i{width:26px;height:26px;border-radius:50%;background:var(--accent);display:inline-block}
+  nav .links{display:flex;gap:24px;font-size:.95rem}
+  nav .links a{text-decoration:none;color:var(--muted)}
+  nav .links a:hover{color:var(--ink)}
+
+  .hero{padding:88px 0 96px;position:relative}
+  .hello{font-size:1.1rem;color:var(--muted);margin-bottom:18px}
+  h1{font-family:var(--display);font-weight:800;font-size:clamp(3.2rem,11vw,7.6rem);line-height:.95;letter-spacing:-.04em}
+  .intro{margin-top:36px;max-width:32em;font-size:1.25rem;color:var(--muted)}
+  .intro b{color:var(--ink);font-weight:500}
+  .btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+  .btn{padding:14px 26px;border-radius:999px;font-weight:500;text-decoration:none;transition:transform .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .primary{background:var(--accent);color:var(--accent-ink)}
+  .ghost{background:var(--surface);border:1.5px solid var(--line)}
+  .dot{position:absolute;border-radius:50%;z-index:-1}
+  .d1{width:220px;height:220px;background:var(--peach);right:-40px;top:40px}
+  .d2{width:120px;height:120px;background:var(--mint);right:150px;bottom:30px}
+
+  section{padding:64px 0}
+  h2{font-family:var(--display);font-weight:700;font-size:clamp(1.8rem,3.6vw,2.5rem);letter-spacing:-.02em;line-height:1.1;margin-bottom:32px}
+
+  .do{display:grid;gap:16px}
+  .item{display:grid;grid-template-columns:96px 1fr;gap:24px;align-items:center;padding:26px;border-radius:26px;background:var(--surface);border:1px solid var(--line)}
+  .badge{width:96px;height:96px;border-radius:24px;display:grid;place-items:center}
+  .badge svg{width:42px;height:42px;stroke:var(--ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .item:nth-child(1) .badge{background:var(--sky)}
+  .item:nth-child(2) .badge{background:var(--peach)}
+  .item:nth-child(3) .badge{background:var(--mint)}
+  .item h3{font-family:var(--display);font-size:1.35rem;margin-bottom:4px}
+  .item p{color:var(--muted)}
+
+  .contact{border-radius:32px;background:var(--accent);color:var(--accent-ink);padding:56px 40px;text-align:center}
+  .contact h2{margin-bottom:12px}
+  .contact p{opacity:.85;max-width:28em;margin:0 auto 28px}
+  .contact .row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+  .contact a{padding:12px 22px;border-radius:999px;border:1.5px solid currentColor;text-decoration:none;font-weight:500;transition:background .2s,color .2s}
+  .contact a:hover{background:var(--accent-ink);color:var(--accent)}
+
+  footer{padding:48px 0 56px;color:var(--muted);font-size:.95rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  @media (max-width:640px){
+    nav .links{display:none}
+    .hero{padding-top:56px}
+    .item{grid-template-columns:1fr}
+    .badge{width:72px;height:72px}
+    .d1{width:140px;height:140px;right:-30px}
+    .d2{display:none}
+    .contact{padding:44px 24px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="mark" href="#"><i></i>Bhupesh</a>
+    <div class="links"><a href="#work">What I do</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero">
+    <div class="dot d1" aria-hidden="true"></div>
+    <div class="dot d2" aria-hidden="true"></div>
+    <p class="hello">Hi, I’m</p>
+    <h1>Bhupesh<br>Panwar</h1>
+    <p class="intro">I’m an engineer. I <b>build apps</b>, make <b>Chrome extensions</b>, and <b>write articles</b> about what I learn along the way.</p>
+    <div class="btns">
+      <a class="btn primary" href="#work">See what I do</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <section id="work">
+    <h2>What I do</h2>
+    <div class="do">
+      <div class="item">
+        <div class="badge"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+        <div><h3>Apps</h3><p>I design and build apps that are simple to use and solid underneath.</p></div>
+      </div>
+      <div class="item">
+        <div class="badge"><svg viewBox="0 0 24 24"><path d="M10 3h4v3a2 2 0 1 0 4 0V3h3v6h-3a2 2 0 1 0 0 4h3v8H3V3h7z"/></svg></div>
+        <div><h3>Chrome extensions</h3><p>Small tools that live in your browser and take care of everyday annoyances.</p></div>
+      </div>
+      <div class="item">
+        <div class="badge"><svg viewBox="0 0 24 24"><path d="M4 20l1-4L17 4l3 3L8 19l-4 1z"/><path d="M14 7l3 3"/></svg></div>
+        <div><h3>Articles</h3><p>I write about engineering, building things, and the lessons that come from shipping them.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Let’s talk</h2>
+      <p>Have an idea, a question, or something you want built? I’d like to hear it.</p>
+      <div class="row">
+        <a href="panwarbhupesh3@gmail.com">Email</a>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Bhupesh Panwar</span>
+    <span>Built by hand with HTML &amp; CSS</span>
+  </footer>
+</div>
+</body>
+</html>
